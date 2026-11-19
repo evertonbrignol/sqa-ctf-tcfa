@@ -93,6 +93,7 @@
 .sqa-ctf summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--cinza);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;line-height:1}
 .sqa-ctf details[open] summary::after{content:"\2013";background:var(--azul)}
 .sqa-ctf details>div{padding:0 20px 16px}
+.sqa-ctf .sqa-oficial{font-size:15px;margin:4px 0 0;padding-top:10px;border-top:1px solid var(--linha)}
 .sqa-ctf .sqa-botoes{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 4px}
 .sqa-ctf .sqa-botao{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:999px;background:var(--azul);color:#111;font-weight:800;text-decoration:none;font-size:15px}
 .sqa-ctf .sqa-botao:hover{background:#1E90EA;color:#111}
@@ -324,71 +325,136 @@
 
 <!-- ============ 8. FAQ ============ -->
 <h2 id="sqa-perguntas">Perguntas frequentes</h2>
+<div class="sqa-destaque sqa-nota">
+  <p><strong>As respostas oficiais estão no site do Ibama.</strong> As respostas abaixo são resumos das perguntas frequentes publicadas pelo Ibama. Antes de tomar qualquer providência, confira a resposta oficial e atualizada no link indicado em cada pergunta.</p>
+</div>
 
+<h3>Cadastro (CTF/APP)</h3>
 <details>
-  <summary>Estou inscrito no CTF/APP. Isso quer dizer que preciso pagar a TCFA?</summary>
-  <div><p>Não necessariamente. A lista de atividades do cadastro é mais ampla do que a lista de atividades sujeitas à taxa. Paga a TCFA quem exerce atividade das categorias 1 a 20 do Anexo VIII da Lei nº 6.938/1981, conforme o porte e a tabela do Ibama, salvo as isenções da lei.</p></div>
+  <summary>O que é o CTF/APP?</summary>
+  <div><p>É o registro obrigatório das pessoas físicas e jurídicas que realizam atividades sujeitas a controle ambiental, conforme a lista de atividades do Ibama.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#ctf-app" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
 </details>
 <details>
-  <summary>Sou MEI ou optante do Simples Nacional. Estou dispensado?</summary>
-  <div><p>Não há dispensa automática. O que conta é a atividade exercida, o porte e a tabela do Ibama, que prevê cobrança para microempresa em atividades de potencial alto. O cadastro e o RAPP continuam obrigatórios quando houver enquadramento.</p></div>
+  <summary>Como faço a inscrição no CTF/APP?</summary>
+  <div><p>A inscrição é feita no site do Ibama, pela página do CTF/APP, no formulário de pessoa física ou de pessoa jurídica. Antes, confira o enquadramento da atividade.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#ctf-app" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
 </details>
 <details>
-  <summary>Pessoa física paga TCFA?</summary>
-  <div><p>A tabela do Ibama não prevê cobrança para pessoa física. A pessoa física, porém, pode estar obrigada à inscrição no CTF/APP e ao RAPP, conforme a atividade.</p></div>
+  <summary>Matriz ou filial que faz só atividades administrativas precisa se inscrever?</summary>
+  <div><p>Não. Unidades que realizam apenas atividades administrativas, inclusive emissão de notas fiscais, não são obrigadas à inscrição.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#ctf-app" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+<details>
+  <summary>A matriz exerce atividade potencialmente poluidora, mas as filiais não. As filiais devem se inscrever?</summary>
+  <div><p>Cada CNPJ se inscreve de acordo com a atividade que executa. Filiais que não realizam atividades potencialmente poluidoras não devem ser inscritas.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#ctf-app" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+<details>
+  <summary>O sistema informa que meu CPF já está cadastrado. O que faço?</summary>
+  <div><p>Tente acessar o cadastro com a sua senha. Se não lembrar, use a recuperação de senha. Se mesmo assim não conseguir, entre em contato pelo Fale com o Ibama.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#ctf-app" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+<details>
+  <summary>Como incluo uma nova atividade no cadastro?</summary>
+  <div><p>A inclusão é feita pelo próprio usuário no sistema do Ibama, na declaração de atividades desenvolvidas. Ela serve para declarar uma atividade nova ou para regularizar uma atividade que deixou de ser declarada. A regularização por iniciativa própria é melhor do que esperar uma fiscalização.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#alteracao-dados" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+<details>
+  <summary>Declarei uma atividade ou uma data de início errada. Como corrijo?</summary>
+  <div><p>Logo após a declaração, dentro do prazo indicado pelo Ibama, o próprio usuário consegue corrigir no sistema. Depois desse prazo, a correção depende de requerimento ao Ibama, com justificativa e documentos.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#alteracao-dados" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+<details>
+  <summary>Deixei de exercer uma atividade. O que faço?</summary>
+  <div><p>Declare o encerramento no sistema assim que a atividade deixar de ser exercida. A data informada no sistema é considerada a data de término. Quando todas as atividades estiverem encerradas e não houver relatório nem taxa pendente, encerre também a inscrição.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#alteracao-dados" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+
+<h3>Certificado de Regularidade</h3>
+<details>
+  <summary>A TCFA está em dia, mas não consigo emitir o Certificado de Regularidade. Por quê?</summary>
+  <div><p>O Certificado de Regularidade não tem vínculo com o pagamento da TCFA. Ele trata do cadastro e de obrigações ambientais, como a entrega de relatórios. Para comprovar a situação dos pagamentos, o documento é a Certidão Negativa de Débito, emitida no site do Ibama.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/tcfa" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+<details>
+  <summary>Posso renovar o Certificado de Regularidade antes do vencimento?</summary>
+  <div><p>Sim. Ao emitir um novo certificado, o anterior é cancelado. Atenção se o certificado antigo estiver sendo usado, por exemplo, em uma licitação.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#certificado-de-regularidade" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+<details>
+  <summary>O certificado está bloqueado por pendência em um sistema que não uso. O que faço?</summary>
+  <div><p>Nos casos de pendência no sistema DOF ou no relatório de agrotóxicos, o Ibama orienta entrar em contato pelo Fale com o Ibama.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#certificado-de-regularidade" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+
+<h3>Porte da empresa</h3>
+<details>
+  <summary>Qual porte devo declarar?</summary>
+  <div><p>O porte corresponde ao faturamento bruto do estabelecimento em cada ano, conforme as faixas publicadas pelo Ibama. Entidades sem fins lucrativos filantrópicas, com certificação de entidade beneficente (CEBAS), são isentas da TCFA; as não filantrópicas declaram porte e pagam a taxa.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#porte" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+<details>
+  <summary>A empresa ainda não começou a faturar. Qual porte declaro?</summary>
+  <div><p>No ano em curso, o porte é declarado com base no faturamento esperado. Se o faturamento real mudar a faixa, o porte deve ser corrigido no sistema antes do fim do ano, porque depois não é mais possível alterar.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#porte" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+<details>
+  <summary>O porte de um ano anterior está errado. Como corrijo?</summary>
+  <div><p>O próprio usuário só altera o porte do ano corrente. Para anos anteriores, é preciso fazer pedido ao Ibama, com documento que comprove o faturamento bruto do ano.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/ctf#porte" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+<details>
+  <summary>Tenho matriz e filiais. Como fica o porte?</summary>
+  <div><p>Pela orientação atual do Ibama, o porte das filiais é definido pela receita da pessoa jurídica como um todo, somando matriz e filiais. A taxa continua sendo devida por estabelecimento.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/servicos/taxas/tcfa/sobre-a-tcfa" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+
+<h3>TCFA</h3>
+<details>
+  <summary>Quem é isento da TCFA?</summary>
+  <div><p>Entidades públicas federais, distritais, estaduais e municipais, entidades filantrópicas com certificação de entidade beneficente (CEBAS), quem pratica agricultura de subsistência e as populações tradicionais, conforme a Lei nº 6.938/1981.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/tcfa" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
 </details>
 <details>
   <summary>Minha empresa tem várias atividades. Pago uma taxa para cada?</summary>
-  <div><p>Não. Em cada estabelecimento, paga-se a taxa de uma única atividade, a de maior valor. Todas as atividades, no entanto, devem ser declaradas no cadastro.</p></div>
+  <div><p>Não. Todas as atividades devem ser declaradas no cadastro, mas a taxa de cada estabelecimento corresponde a uma só delas, a de valor mais elevado.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/servicos/taxas/tcfa/sobre-a-tcfa" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
 </details>
 <details>
-  <summary>Tenho matriz e filiais. Como fica?</summary>
-  <div><p>A taxa é devida por estabelecimento, ou seja, cada unidade enquadrada tem a sua. A forma de calcular o porte de matriz e filiais está explicada na <a href="https://www.gov.br/ibama/pt-br/servicos/taxas/tcfa/sobre-a-tcfa" target="_blank" rel="noopener" class="sqa-externo">página Sobre a TCFA</a>.</p></div>
+  <summary>Não recebi boleto. Preciso pagar?</summary>
+  <div><p>Sim. O Ibama não envia boletos. A taxa é gerada a partir da data de início da atividade declarada no cadastro, e emitir a guia é obrigação do contribuinte, no site do Ibama.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/servicos/taxas/tcfa/sobre-a-tcfa" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
 </details>
 <details>
-  <summary>Preciso me cadastrar também no Estado e na Prefeitura?</summary>
-  <div><p>Não. A inscrição no CTF/APP vale como inscrição no cadastro estadual e, pelo acordo de cooperação, também no cadastro municipal. Não existe segunda inscrição a fazer.</p></div>
+  <summary>Encerrei a atividade no cadastro, mas a taxa continua sendo gerada. O que faço?</summary>
+  <div><p>O Ibama orienta enviar os dados ao setor de cobrança, pelo contato indicado nas perguntas frequentes da TCFA.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/tcfa" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
+</details>
+
+<h3>Relatório anual (RAPP)</h3>
+<details>
+  <summary>Quem deve entregar o RAPP?</summary>
+  <div><p>Toda pessoa que exerce as atividades do Anexo VIII da Lei nº 6.938/1981, que no cadastro correspondem às categorias 1 a 20. As categorias 21 e 22 não entregam o RAPP.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/atividades-potencialmente-poluidoras-ou-utilizadoras-de-recursos-ambientais-app#rapp" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
 </details>
 <details>
-  <summary>A Prefeitura envia ou emite o boleto da TCFA?</summary>
-  <div><p>Não. A guia é emitida pelo próprio contribuinte no site do Ibama. Não informe senha nem dados de acesso a terceiros para obter a guia.</p></div>
+  <summary>Quando e como entrego o RAPP?</summary>
+  <div><p>O relatório é entregue uma vez por ano, com os dados do ano anterior, no sistema Serviços Ibama, na área de relatórios. O período de entrega é informado pelo Ibama.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/atividades-potencialmente-poluidoras-ou-utilizadoras-de-recursos-ambientais-app#rapp" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
 </details>
 <details>
-  <summary>Não recebi boleto. Estou livre da taxa?</summary>
-  <div><p>Não. O Ibama não envia boletos. A taxa começa a ser gerada a partir da data de início da atividade declarada no cadastro, e a emissão da guia é obrigação do contribuinte.</p></div>
+  <summary>Encerrei a atividade. Ainda preciso entregar o RAPP?</summary>
+  <div><p>Sim. Mesmo depois do encerramento, os relatórios pendentes das atividades exercidas devem ser entregues.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/atividades-potencialmente-poluidoras-ou-utilizadoras-de-recursos-ambientais-app#rapp" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
 </details>
 <details>
-  <summary>A taxa de licenciamento ambiental que pago à Prefeitura abate a TCFA?</summary>
-  <div><p>Não. Taxa de licenciamento é outra cobrança e não abate a TCFA.</p></div>
+  <summary>Entreguei o RAPP com informação errada. Como corrijo?</summary>
+  <div><p>É possível pedir a retificação do relatório do ano no próprio sistema. Depois de corrigir, o relatório daquele ano deve ser entregue novamente.</p>
+  <p class="sqa-oficial"><a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/atividades-potencialmente-poluidoras-ou-utilizadoras-de-recursos-ambientais-app#rapp" target="_blank" rel="noopener" class="sqa-externo">Ver a resposta oficial no Ibama</a></p></div>
 </details>
-<details>
-  <summary>Pagar a TCFA ou ter o cadastro substitui a licença ambiental?</summary>
-  <div><p>Não. Cadastro, taxa e licença são instrumentos diferentes. A licença continua obrigatória para as atividades sujeitas ao licenciamento.</p></div>
-</details>
-<details>
-  <summary>Minha atividade é dispensada de licença. Preciso me cadastrar?</summary>
-  <div><p>Depende do fundamento da dispensa. Não há obrigação quando o licenciamento é dispensado com base em resolução do Conama ou do Conselho Estadual de Meio Ambiente. Outras situações devem ser examinadas caso a caso, inclusive as demais atividades do estabelecimento.</p></div>
-</details>
-<details>
-  <summary>Encerrei a atividade, mas a taxa continua sendo gerada. O que faço?</summary>
-  <div><p>Informe a data de término no cadastro e, se a cobrança continuar, procure o Ibama pelos canais indicados nas <a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes/tcfa" target="_blank" rel="noopener" class="sqa-externo">perguntas frequentes sobre a TCFA</a>. Se houver notificação de cobrança, apresente a contestação dentro do prazo.</p></div>
-</details>
-<details>
-  <summary>Paralisei a atividade por um tempo. Continuo pagando?</summary>
-  <div><p>A paralisação deve ser declarada ao Ibama como suspensão temporária de atividades. Sem essa declaração, o cadastro continua ativo. O procedimento está na <a href="https://www.gov.br/ibama/pt-br/servicos/cadastros/ctf/ctf-app/ctf-app" target="_blank" rel="noopener" class="sqa-externo">página do CTF/APP</a>.</p></div>
-</details>
-<details>
-  <summary>Silvicultura paga TCFA?</summary>
-  <div><p>A Lei nº 14.876/2024 retirou a silvicultura da categoria 20 do Anexo VIII, que é a lista de atividades sujeitas à taxa. A atividade pode continuar sujeita ao cadastro, e outras atividades florestais exercidas no mesmo estabelecimento precisam de análise própria.</p></div>
-</details>
-<details>
-  <summary>O Certificado de Regularidade prova que a TCFA está paga?</summary>
-  <div><p>Não. O CR trata do cadastro. A situação dos débitos é comprovada por certidão própria do Ibama.</p></div>
-</details>
-<details>
-  <summary>Onde tiro dúvidas sobre o meu caso?</summary>
-  <div><p>Questões de cadastro e de cobrança federal são tratadas pelo <a href="https://www.gov.br/ibama/pt-br/canais_atendimento/fale-conosco" target="_blank" rel="noopener" class="sqa-externo">Fale com o Ibama</a>. Para orientação sobre o licenciamento em Pelotas e sobre esta página, procure a <a href="#sqa-atendimento">Secretaria de Qualidade Ambiental</a>.</p></div>
-</details>
+
+<p>Não encontrou sua dúvida? Consulte todas as <a href="https://www.gov.br/ibama/pt-br/acesso-a-informacao/perguntas-frequentes" target="_blank" rel="noopener" class="sqa-externo">perguntas frequentes do Ibama</a> ou use o <a href="https://www.gov.br/ibama/pt-br/canais_atendimento/fale-conosco" target="_blank" rel="noopener" class="sqa-externo">Fale com o Ibama</a>.</p>
 <a class="sqa-topo" href="#ctf-tcfa">Voltar ao topo</a>
 
 <!-- ============ 9. LEGISLAÇÃO ============ -->
